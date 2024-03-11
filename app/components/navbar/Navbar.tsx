@@ -1,14 +1,14 @@
 import Link from "next/link";
 import React from "react";
+import styles from "./navbar.module.css";
+import Links from "./links/Links";
 const Navbar = () => {
   // Your Navbar component implementation here
   return (
-    <div>
+    <div className={styles.container}>
       <div>Logo</div>
       <div>
-        <Link href="/">Homepage</Link>
-        <Link href="/about">About</Link>
-        <Link href="/contact">Contact</Link>
+        <Links />
       </div>
     </div>
   );
